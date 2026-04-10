@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-0001-0000-0000-000000000001}|MarketUees.API\\MarketUees.API.csproj|c:\\users\\jhonny\\downloads\\marketuees_v4\\marketuees\\marketuees.api\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-0001-0000-0000-000000000001}|MarketUees.API\\MarketUees.API.csproj|solutionrelative:marketuees.api\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-0004-0000-0000-000000000004}|MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj|c:\\users\\jhonny\\downloads\\marketuees_v4\\marketuees\\marketuees.infrastructure\\persistence\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-0004-0000-0000-000000000004}|MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj|solutionrelative:marketuees.infrastructure\\persistence\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-0001-0000-0000-000000000001}|MarketUees.API\\MarketUees.API.csproj|c:\\users\\jhonny\\downloads\\marketuees_v4\\marketuees\\marketuees.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-0001-0000-0000-000000000001}|MarketUees.API\\MarketUees.API.csproj|solutionrelative:marketuees.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.API\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "MarketUees.API\\Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.API\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "MarketUees.API\\Controllers\\ProductoController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAwDEAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T04:54:12.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Infrastructure\\Persistence\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "MarketUees.Infrastructure\\Persistence\\Repositories\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Infrastructure\\Persistence\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "MarketUees.Infrastructure\\Persistence\\Repositories\\BaseRepository.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAADQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T04:53:49.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.API\\Program.cs",
+              "RelativeDocumentMoniker": "MarketUees.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.API\\Program.cs",
+              "RelativeToolTip": "MarketUees.API\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T04:49:45.843Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

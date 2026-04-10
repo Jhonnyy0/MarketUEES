@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.5" />
+    <PackageReference Include="MongoDbGenericRepository" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MarketUees.Application\MarketUees.Application.csproj" />
+    <ProjectReference Include="..\MarketUees.Domain\MarketUees.Domain.csproj" />
+    <ProjectReference Include="..\MarketUees.Infrastructure\MarketUees.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

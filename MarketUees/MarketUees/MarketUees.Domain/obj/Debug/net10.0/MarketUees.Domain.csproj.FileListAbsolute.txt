@@ -1,0 +1,11 @@
+C:\Users\Jhonny\Downloads\MarketUees_v4\MarketUees\MarketUees.Domain\bin\Debug\net10.0\MarketUees.Domain.deps.json
+C:\Users\Jhonny\Downloads\MarketUees_v4\MarketUees\MarketUees.Domain\bin\Debug\net10.0\MarketUees.Domain.dll
+C:\Users\Jhonny\Downloads\MarketUees_v4\MarketUees\MarketUees.Domain\bin\Debug\net10.0\MarketUees.Domain.pdb
+C:\Users\Jhonny\Downloads\MarketUees_v4\MarketUees\MarketUees.Domain\obj\Debug\net10.0\MarketUees.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jhonny\Downloads\MarketUees_v4\MarketUees\MarketUees.Domain\obj\Debug\net10.0\MarketUees.Domain.AssemblyInfoInputs.cache
+C:\Users\Jhonny\Downloads\MarketUees_v4\MarketUees\MarketUees.Domain\obj\Debug\net10.0\MarketUees.Domain.AssemblyInfo.cs
+C:\Users\Jhonny\Downloads\MarketUees_v4\MarketUees\MarketUees.Domain\obj\Debug\net10.0\MarketUees.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Jhonny\Downloads\MarketUees_v4\MarketUees\MarketUees.Domain\obj\Debug\net10.0\MarketUees.Domain.dll
+C:\Users\Jhonny\Downloads\MarketUees_v4\MarketUees\MarketUees.Domain\obj\Debug\net10.0\refint\MarketUees.Domain.dll
+C:\Users\Jhonny\Downloads\MarketUees_v4\MarketUees\MarketUees.Domain\obj\Debug\net10.0\MarketUees.Domain.pdb
+C:\Users\Jhonny\Downloads\MarketUees_v4\MarketUees\MarketUees.Domain\obj\Debug\net10.0\ref\MarketUees.Domain.dll
