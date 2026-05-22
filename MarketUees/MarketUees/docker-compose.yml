@@ -11,9 +11,6 @@ services:
       - CASSANDRA_DC=DC1
       - CASSANDRA_RACK=Rack1
       - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
-    volumes:
-      # --- ESTA LÍNEA HACE LA MAGIA ---
-      - ./init.cql:/docker-entrypoint-initdb.d/init.cql
 
   cassandra-node2:
     image: cassandra:4.1
