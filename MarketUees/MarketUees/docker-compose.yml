@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   cassandra-node1:
     image: cassandra:4.1
@@ -46,41 +44,77 @@ services:
     command: server /data --console-address ":9001"
     restart: unless-stopped
 
-  cassandra-backup-local:
-    image: alpine:latest
-    container_name: cassandra-backup-local
+  cassandra-backup-minio-export:
+    image: cassandra:4.1
+    container_name: cassandra-backup-minio-export
+    environment:
+      - TZ=America/El_Salvador
     volumes:
-      - cassandra-node1-data:/cassandra-data:ro
-      - ./Backups_Auto_MarketUEES:/backups
+      - ./Backups_Minio_MarketUEES:/minio-work
     depends_on:
       - cassandra-node1
-    entrypoint: >
-      sh -c "
-        apk add --no-cache dcron &&
-        mkdir -p /backups &&
-        echo '0 2 * * * cp -r /cassandra-data/data/marketuees /backups/backup_\$\$(date +\%Y\%m\%d_\%H\%M\%S) && find /backups -maxdepth 1 -type d -mtime +7 -exec rm -rf {} +' > /etc/crontabs/root &&
-        crond -f
-      "
+    entrypoint:
+      - /bin/sh
+      - -c
+      - |
+        mkdir -p /minio-work
+        while ! cqlsh cassandra-node1 -e "DESCRIBE KEYSPACE marketuees" >/dev/null 2>&1; do
+          echo "Esperando Cassandra para backup MinIO..."
+          sleep 10
+        done
+        while true; do
+          NOW=$$(date +%s)
+          TARGET=$$(date -d "today 02:00" +%s)
+          if [ "$$NOW" -ge "$$TARGET" ]; then
+            TARGET=$$(date -d "tomorrow 02:00" +%s)
+          fi
+          WAIT=$$((TARGET - NOW))
+          echo "Proximo backup MinIO automatico en $$WAIT segundos."
+          sleep "$$WAIT"
+          TAG="backup_minio_$$(date +%Y%m%d_%H%M%S)"
+          DEST="/minio-work/$$TAG"
+          mkdir -p "$$DEST"
+          cqlsh cassandra-node1 -e "COPY marketuees.vistas_contenido TO '$$DEST/vistas_contenido.csv' WITH HEADER = TRUE;"
+          cqlsh cassandra-node1 -e "COPY marketuees.actividad_usuario TO '$$DEST/actividad_usuario.csv' WITH HEADER = TRUE;"
+          echo "Backup MinIO preparado: $$TAG"
+        done
     restart: unless-stopped
 
   cassandra-backup-minio:
-    image: alpine:latest
+    image: minio/mc:latest
     container_name: cassandra-backup-minio
     volumes:
-      - cassandra-node1-data:/cassandra-data:ro
+      - ./Backups_Minio_MarketUEES:/minio-work
     depends_on:
-      - cassandra-node1
+      - cassandra-backup-minio-export
       - minio
-    entrypoint: >
-      sh -c "
-        apk add --no-cache dcron aws-cli &&
-        aws configure set aws_access_key_id admin &&
-        aws configure set aws_secret_access_key admin123 &&
-        aws configure set default.region us-east-1 &&
-        aws --endpoint-url http://minio:9000 s3 mb s3://cassandra-backups --region us-east-1 || true &&
-        echo '0 2 * * * aws --endpoint-url http://minio:9000 s3 cp /cassandra-data/data/marketuees s3://cassandra-backups/backup_\$\$(date +\%Y\%m\%d_\%H\%M\%S) --recursive' > /etc/crontabs/root &&
-        crond -f
-      "
+    entrypoint:
+      - /bin/sh
+      - -c
+      - |
+        until mc alias set localminio http://minio:9000 admin admin123 >/dev/null 2>&1; do
+          echo "Esperando MinIO..."
+          sleep 10
+        done
+        mc mb -p localminio/cassandra-backups || true
+        while true; do
+          SRC=""
+          for DIR in /minio-work/backup_minio_*; do
+            [ -d "$$DIR" ] || continue
+            [ -f "$$DIR/.uploaded" ] && continue
+            SRC="$$DIR"
+            break
+          done
+          if [ -n "$$SRC" ]; then
+            TAG="$$(basename "$$SRC")"
+            mc cp --recursive "$$SRC/" "localminio/cassandra-backups/$$TAG/"
+            echo "Backup MinIO creado: $$TAG"
+            touch "$$SRC/.uploaded"
+          else
+            echo "No hay backup MinIO pendiente para subir."
+          fi
+          sleep 60
+        done
     restart: unless-stopped
 
 volumes:

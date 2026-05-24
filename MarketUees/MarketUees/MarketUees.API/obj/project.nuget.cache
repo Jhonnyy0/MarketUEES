@@ -1,25 +1,68 @@
 {
   "version": 2,
-  "dgSpecHash": "BlWxKfKSx/I=",
+  "dgSpecHash": "HQJnEQ7Swtk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.API\\MarketUees.API.csproj",
+  "projectFilePath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.API\\MarketUees.API.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Jhonny\\.nuget\\packages\\aspnetcore.identity.mongodbcore\\7.0.0\\aspnetcore.identity.mongodbcore.7.0.0.nupkg.sha512",
-    "C:\\Users\\Jhonny\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
-    "C:\\Users\\Jhonny\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\10.0.5\\microsoft.aspnetcore.authentication.jwtbearer.10.0.5.nupkg.sha512",
-    "C:\\Users\\Jhonny\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.17.0\\microsoft.identitymodel.abstractions.8.17.0.nupkg.sha512",
-    "C:\\Users\\Jhonny\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.17.0\\microsoft.identitymodel.jsonwebtokens.8.17.0.nupkg.sha512",
-    "C:\\Users\\Jhonny\\.nuget\\packages\\microsoft.identitymodel.logging\\8.17.0\\microsoft.identitymodel.logging.8.17.0.nupkg.sha512",
-    "C:\\Users\\Jhonny\\.nuget\\packages\\microsoft.identitymodel.protocols\\8.0.1\\microsoft.identitymodel.protocols.8.0.1.nupkg.sha512",
-    "C:\\Users\\Jhonny\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\8.0.1\\microsoft.identitymodel.protocols.openidconnect.8.0.1.nupkg.sha512",
-    "C:\\Users\\Jhonny\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.17.0\\microsoft.identitymodel.tokens.8.17.0.nupkg.sha512",
-    "C:\\Users\\Jhonny\\.nuget\\packages\\mongodb.bson\\3.7.1\\mongodb.bson.3.7.1.nupkg.sha512",
-    "C:\\Users\\Jhonny\\.nuget\\packages\\mongodb.driver\\3.7.1\\mongodb.driver.3.7.1.nupkg.sha512",
-    "C:\\Users\\Jhonny\\.nuget\\packages\\mongodbgenericrepository\\2.0.0\\mongodbgenericrepository.2.0.0.nupkg.sha512",
-    "C:\\Users\\Jhonny\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
-    "C:\\Users\\Jhonny\\.nuget\\packages\\snappier\\1.0.0\\snappier.1.0.0.nupkg.sha512",
-    "C:\\Users\\Jhonny\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.17.0\\system.identitymodel.tokens.jwt.8.17.0.nupkg.sha512",
-    "C:\\Users\\Jhonny\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
+    "C:\\Users\\Alejandro\\.nuget\\packages\\aspnetcore.identity.mongodbcore\\7.0.0\\aspnetcore.identity.mongodbcore.7.0.0.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\cassandracsharpdriver\\3.22.0\\cassandracsharpdriver.3.22.0.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\10.0.5\\microsoft.aspnetcore.authentication.jwtbearer.10.0.5.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.17.0\\microsoft.identitymodel.abstractions.8.17.0.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.17.0\\microsoft.identitymodel.jsonwebtokens.8.17.0.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\microsoft.identitymodel.logging\\8.17.0\\microsoft.identitymodel.logging.8.17.0.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\microsoft.identitymodel.protocols\\8.0.1\\microsoft.identitymodel.protocols.8.0.1.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\8.0.1\\microsoft.identitymodel.protocols.openidconnect.8.0.1.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.17.0\\microsoft.identitymodel.tokens.8.17.0.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\mongodb.bson\\3.7.1\\mongodb.bson.3.7.1.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\mongodb.driver\\3.7.1\\mongodb.driver.3.7.1.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\mongodbgenericrepository\\2.0.0\\mongodbgenericrepository.2.0.0.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\snappier\\1.0.0\\snappier.1.0.0.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\system.codedom\\4.7.0\\system.codedom.4.7.0.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.17.0\\system.identitymodel.tokens.jwt.8.17.0.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\system.management\\4.7.0\\system.management.4.7.0.nupkg.sha512",
+    "C:\\Users\\Alejandro\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "El paquete \"Newtonsoft.Json\" 9.0.1 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-5crp-9r3c-p9vr",
+      "projectPath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.API\\MarketUees.API.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.API\\MarketUees.API.csproj",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "El paquete \"SharpCompress\" 0.30.1 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-6c8g-7p36-r338",
+      "projectPath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.API\\MarketUees.API.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.API\\MarketUees.API.csproj",
+      "libraryId": "SharpCompress",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "El paquete \"Snappier\" 1.0.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-pggp-6c3x-2xmx",
+      "projectPath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.API\\MarketUees.API.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.API\\MarketUees.API.csproj",
+      "libraryId": "Snappier",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

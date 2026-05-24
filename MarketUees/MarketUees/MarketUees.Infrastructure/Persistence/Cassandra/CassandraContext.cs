@@ -19,7 +19,11 @@ namespace MarketUees.Infrastructure.Persistence.Cassandra
             using var tempSession = _cluster.Connect();
             tempSession.Execute($@"
                 CREATE KEYSPACE IF NOT EXISTS {Keyspace}
-                WITH replication = {{'class': 'SimpleStrategy', 'replication_factor': 1}}");
+                WITH replication = {{'class': 'NetworkTopologyStrategy', 'DC1': 2}}");
+
+            tempSession.Execute($@"
+                ALTER KEYSPACE {Keyspace}
+                WITH replication = {{'class': 'NetworkTopologyStrategy', 'DC1': 2}}");
 
             Session = _cluster.Connect(Keyspace);
             InicializarSchema();

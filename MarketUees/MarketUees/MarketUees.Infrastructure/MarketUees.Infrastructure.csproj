@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <!-- MongoDB -->
+    <PackageReference Include="CassandraCSharpDriver" Version="3.22.0" />
     <PackageReference Include="MongoDB.Driver" Version="3.7.1" />
 
     <!-- Identity sobre MongoDB — forzar MongoDbGenericRepository 1.4.3 para evitar NU1605 -->

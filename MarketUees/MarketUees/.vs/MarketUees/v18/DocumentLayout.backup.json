@@ -1,18 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\",
+  "WorkspaceRootPath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-0001-0000-0000-000000000001}|MarketUees.API\\MarketUees.API.csproj|c:\\users\\jhonny\\downloads\\marketuees_v4\\marketuees\\marketuees.api\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-0001-0000-0000-000000000001}|MarketUees.API\\MarketUees.API.csproj|c:\\users\\alejandro\\documents\\github\\marketuees\\marketuees\\marketuees\\marketuees.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-0001-0000-0000-000000000001}|MarketUees.API\\MarketUees.API.csproj|solutionrelative:marketuees.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-0001-0000-0000-000000000001}|MarketUees.API\\MarketUees.API.csproj|c:\\users\\alejandro\\documents\\github\\marketuees\\marketuees\\marketuees\\marketuees.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-0001-0000-0000-000000000001}|MarketUees.API\\MarketUees.API.csproj|solutionrelative:marketuees.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-0004-0000-0000-000000000004}|MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj|c:\\users\\alejandro\\documents\\github\\marketuees\\marketuees\\marketuees\\marketuees.infrastructure\\persistence\\cassandra\\cassandracontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-0004-0000-0000-000000000004}|MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj|solutionrelative:marketuees.infrastructure\\persistence\\cassandra\\cassandracontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-0004-0000-0000-000000000004}|MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj|c:\\users\\alejandro\\documents\\github\\marketuees\\marketuees\\marketuees\\marketuees.infrastructure\\persistence\\cassandra\\actividadusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-0004-0000-0000-000000000004}|MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj|solutionrelative:marketuees.infrastructure\\persistence\\cassandra\\actividadusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-0004-0000-0000-000000000004}|MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj|c:\\users\\alejandro\\documents\\github\\marketuees\\marketuees\\marketuees\\marketuees.infrastructure\\persistence\\cassandra\\vistacontenidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-0004-0000-0000-000000000004}|MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj|solutionrelative:marketuees.infrastructure\\persistence\\cassandra\\vistacontenidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-0001-0000-0000-000000000001}|MarketUees.API\\MarketUees.API.csproj|c:\\users\\alejandro\\documents\\github\\marketuees\\marketuees\\marketuees\\marketuees.api\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1B2C3D4-0001-0000-0000-000000000001}|MarketUees.API\\MarketUees.API.csproj|solutionrelative:marketuees.api\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-0004-0000-0000-000000000004}|MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj|c:\\users\\jhonny\\downloads\\marketuees_v4\\marketuees\\marketuees.infrastructure\\persistence\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-0004-0000-0000-000000000004}|MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj|c:\\users\\alejandro\\documents\\github\\marketuees\\marketuees\\marketuees\\marketuees.infrastructure\\persistence\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1B2C3D4-0004-0000-0000-000000000004}|MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj|solutionrelative:marketuees.infrastructure\\persistence\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-0001-0000-0000-000000000001}|MarketUees.API\\MarketUees.API.csproj|c:\\users\\jhonny\\downloads\\marketuees_v4\\marketuees\\marketuees.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A1B2C3D4-0001-0000-0000-000000000001}|MarketUees.API\\MarketUees.API.csproj|solutionrelative:marketuees.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,10 +43,75 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.API\\Program.cs",
+              "RelativeDocumentMoniker": "MarketUees.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.API\\Program.cs",
+              "RelativeToolTip": "MarketUees.API\\Program.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAuwC8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T05:31:46.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.API\\appsettings.json",
+              "RelativeDocumentMoniker": "MarketUees.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.API\\appsettings.json",
+              "RelativeToolTip": "MarketUees.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-24T05:28:57.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CassandraContext.cs",
+              "DocumentMoniker": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Infrastructure\\Persistence\\Cassandra\\CassandraContext.cs",
+              "RelativeDocumentMoniker": "MarketUees.Infrastructure\\Persistence\\Cassandra\\CassandraContext.cs",
+              "ToolTip": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Infrastructure\\Persistence\\Cassandra\\CassandraContext.cs",
+              "RelativeToolTip": "MarketUees.Infrastructure\\Persistence\\Cassandra\\CassandraContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T05:17:49.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ActividadUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Infrastructure\\Persistence\\Cassandra\\ActividadUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "MarketUees.Infrastructure\\Persistence\\Cassandra\\ActividadUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Infrastructure\\Persistence\\Cassandra\\ActividadUsuarioRepository.cs",
+              "RelativeToolTip": "MarketUees.Infrastructure\\Persistence\\Cassandra\\ActividadUsuarioRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T05:10:31.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VistaContenidoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Infrastructure\\Persistence\\Cassandra\\VistaContenidoRepository.cs",
+              "RelativeDocumentMoniker": "MarketUees.Infrastructure\\Persistence\\Cassandra\\VistaContenidoRepository.cs",
+              "ToolTip": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Infrastructure\\Persistence\\Cassandra\\VistaContenidoRepository.cs",
+              "RelativeToolTip": "MarketUees.Infrastructure\\Persistence\\Cassandra\\VistaContenidoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T05:10:12.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ProductoController.cs",
-              "DocumentMoniker": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.API\\Controllers\\ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.API\\Controllers\\ProductoController.cs",
               "RelativeDocumentMoniker": "MarketUees.API\\Controllers\\ProductoController.cs",
-              "ToolTip": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.API\\Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.API\\Controllers\\ProductoController.cs",
               "RelativeToolTip": "MarketUees.API\\Controllers\\ProductoController.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAAwDEAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -39,28 +120,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "BaseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Infrastructure\\Persistence\\Repositories\\BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Infrastructure\\Persistence\\Repositories\\BaseRepository.cs",
               "RelativeDocumentMoniker": "MarketUees.Infrastructure\\Persistence\\Repositories\\BaseRepository.cs",
-              "ToolTip": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Infrastructure\\Persistence\\Repositories\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Infrastructure\\Persistence\\Repositories\\BaseRepository.cs",
               "RelativeToolTip": "MarketUees.Infrastructure\\Persistence\\Repositories\\BaseRepository.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAAADQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAIBJwDQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-10T04:53:49.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.API\\Program.cs",
-              "RelativeDocumentMoniker": "MarketUees.API\\Program.cs",
-              "ToolTip": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.API\\Program.cs",
-              "RelativeToolTip": "MarketUees.API\\Program.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T04:49:45.843Z",
               "EditorCaption": ""
             }
           ]

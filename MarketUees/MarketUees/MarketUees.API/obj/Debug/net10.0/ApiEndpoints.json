@@ -32,6 +32,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "MarketUees.API.Controllers.ActividadUsuarioController",
+    "Method": "Registrar",
+    "RelativePath": "api/ActividadUsuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MarketUees.API.Controllers.RegistrarActividadRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MarketUees.API.Controllers.ActividadUsuarioController",
+    "Method": "MiActividad",
+    "RelativePath": "api/ActividadUsuario/mi-actividad",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MarketUees.API.Controllers.CompraController",
     "Method": "GetTodas",
     "RelativePath": "api/Compra",
@@ -323,6 +349,32 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MarketUees.API.Controllers.VistaContenidoController",
+    "Method": "Registrar",
+    "RelativePath": "api/VistaContenido/{contenidoId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contenidoId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MarketUees.API.Controllers.VistaContenidoController",
+    "Method": "MisVistas",
+    "RelativePath": "api/VistaContenido/mis-vistas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

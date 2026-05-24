@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MarketUees.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fddfc85f4c5194a85bfd4f10619d6e4268562ff0")]
 [assembly: System.Reflection.AssemblyProductAttribute("MarketUees.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MarketUees.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

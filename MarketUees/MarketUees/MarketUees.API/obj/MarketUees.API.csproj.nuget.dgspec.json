@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.API\\MarketUees.API.csproj": {}
+    "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.API\\MarketUees.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.API\\MarketUees.API.csproj": {
+    "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.API\\MarketUees.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.API\\MarketUees.API.csproj",
+        "projectUniqueName": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.API\\MarketUees.API.csproj",
         "projectName": "MarketUees.API",
-        "projectPath": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.API\\MarketUees.API.csproj",
-        "packagesPath": "C:\\Users\\Jhonny\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.API\\obj\\",
+        "projectPath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.API\\MarketUees.API.csproj",
+        "packagesPath": "C:\\Users\\Alejandro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jhonny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alejandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,14 +33,14 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Application\\MarketUees.Application.csproj": {
-                "projectPath": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Application\\MarketUees.Application.csproj"
+              "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Application\\MarketUees.Application.csproj": {
+                "projectPath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Application\\MarketUees.Application.csproj"
               },
-              "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Domain\\MarketUees.Domain.csproj": {
-                "projectPath": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Domain\\MarketUees.Domain.csproj"
+              "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Domain\\MarketUees.Domain.csproj": {
+                "projectPath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Domain\\MarketUees.Domain.csproj"
               },
-              "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj"
+              "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj"
               }
             }
           }
@@ -55,7 +55,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net10.0": {
@@ -90,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300-preview.0.26177.108/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -508,20 +508,20 @@
         }
       }
     },
-    "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Application\\MarketUees.Application.csproj": {
+    "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Application\\MarketUees.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Application\\MarketUees.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Application\\MarketUees.Application.csproj",
         "projectName": "MarketUees.Application",
-        "projectPath": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Application\\MarketUees.Application.csproj",
-        "packagesPath": "C:\\Users\\Jhonny\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Application\\obj\\",
+        "projectPath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Application\\MarketUees.Application.csproj",
+        "packagesPath": "C:\\Users\\Alejandro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jhonny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alejandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -537,8 +537,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Domain\\MarketUees.Domain.csproj": {
-                "projectPath": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Domain\\MarketUees.Domain.csproj"
+              "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Domain\\MarketUees.Domain.csproj": {
+                "projectPath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Domain\\MarketUees.Domain.csproj"
               }
             }
           }
@@ -553,7 +553,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net10.0": {
@@ -575,7 +575,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300-preview.0.26177.108/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -853,20 +853,20 @@
         }
       }
     },
-    "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Domain\\MarketUees.Domain.csproj": {
+    "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Domain\\MarketUees.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Domain\\MarketUees.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Domain\\MarketUees.Domain.csproj",
         "projectName": "MarketUees.Domain",
-        "projectPath": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Domain\\MarketUees.Domain.csproj",
-        "packagesPath": "C:\\Users\\Jhonny\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Domain\\MarketUees.Domain.csproj",
+        "packagesPath": "C:\\Users\\Alejandro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jhonny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alejandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -894,7 +894,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net10.0": {
@@ -916,7 +916,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300-preview.0.26177.108/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1194,20 +1194,20 @@
         }
       }
     },
-    "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj": {
+    "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj",
         "projectName": "MarketUees.Infrastructure",
-        "projectPath": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Jhonny\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Infrastructure\\MarketUees.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Alejandro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jhonny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alejandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1223,8 +1223,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Domain\\MarketUees.Domain.csproj": {
-                "projectPath": "C:\\Users\\Jhonny\\Downloads\\MarketUees_v4\\MarketUees\\MarketUees.Domain\\MarketUees.Domain.csproj"
+              "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Domain\\MarketUees.Domain.csproj": {
+                "projectPath": "C:\\Users\\Alejandro\\Documents\\GitHub\\MarketUEES\\MarketUees\\MarketUees\\MarketUees.Domain\\MarketUees.Domain.csproj"
               }
             }
           }
@@ -1239,7 +1239,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net10.0": {
@@ -1249,6 +1249,10 @@
             "AspNetCore.Identity.MongoDbCore": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "CassandraCSharpDriver": {
+              "target": "Package",
+              "version": "[3.22.0, )"
             },
             "Microsoft.AspNetCore.Identity": {
               "target": "Package",
@@ -1291,7 +1295,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300-preview.0.26177.108/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
