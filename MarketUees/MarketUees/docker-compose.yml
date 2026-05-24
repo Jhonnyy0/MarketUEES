@@ -13,6 +13,7 @@ services:
       - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
     volumes:
       - cassandra-node1-data:/var/lib/cassandra
+    restart: unless-stopped
 
   cassandra-node2:
     image: cassandra:4.1
@@ -29,10 +30,25 @@ services:
       - cassandra-node2-data:/var/lib/cassandra
     depends_on:
       - cassandra-node1
+    restart: unless-stopped
 
-  cassandra-backup:
+  minio:
+    image: minio/minio
+    container_name: minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      - MINIO_ROOT_USER=admin
+      - MINIO_ROOT_PASSWORD=admin123
+    volumes:
+      - minio-data:/data
+    command: server /data --console-address ":9001"
+    restart: unless-stopped
+
+  cassandra-backup-local:
     image: alpine:latest
-    container_name: cassandra-backup
+    container_name: cassandra-backup-local
     volumes:
       - cassandra-node1-data:/cassandra-data:ro
       - ./Backups_Auto_MarketUEES:/backups
@@ -47,6 +63,27 @@ services:
       "
     restart: unless-stopped
 
+  cassandra-backup-minio:
+    image: alpine:latest
+    container_name: cassandra-backup-minio
+    volumes:
+      - cassandra-node1-data:/cassandra-data:ro
+    depends_on:
+      - cassandra-node1
+      - minio
+    entrypoint: >
+      sh -c "
+        apk add --no-cache dcron aws-cli &&
+        aws configure set aws_access_key_id admin &&
+        aws configure set aws_secret_access_key admin123 &&
+        aws configure set default.region us-east-1 &&
+        aws --endpoint-url http://minio:9000 s3 mb s3://cassandra-backups --region us-east-1 || true &&
+        echo '0 2 * * * aws --endpoint-url http://minio:9000 s3 cp /cassandra-data/data/marketuees s3://cassandra-backups/backup_\$\$(date +\%Y\%m\%d_\%H\%M\%S) --recursive' > /etc/crontabs/root &&
+        crond -f
+      "
+    restart: unless-stopped
+
 volumes:
   cassandra-node1-data:
   cassandra-node2-data:
+  minio-data:
