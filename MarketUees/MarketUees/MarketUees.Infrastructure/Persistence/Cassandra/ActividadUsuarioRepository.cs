@@ -1,4 +1,5 @@
 using Cassandra;
+using MarketUees.Domain.Common;
 using MarketUees.Domain.Entities;
 using MarketUees.Domain.Interfaces.Repositories;
 
@@ -42,6 +43,35 @@ namespace MarketUees.Infrastructure.Persistence.Cassandra
                 TipoActividad = row.GetValue<string>("tipo_actividad"),
                 ContenidoId = row.GetValue<string>("contenido_id") ?? string.Empty,
             });
+        }
+
+        public async Task<CassandraPagedResult<ActividadUsuario>> ObtenerPorUsuarioPaginadoAsync(
+            Guid usuarioId,
+            int pageSize,
+            string? pageState)
+        {
+            var statement = await _session.PrepareAsync(
+                "SELECT usuario_id, fecha_actividad, tipo_actividad, contenido_id FROM actividad_usuario WHERE usuario_id = ?");
+
+            var bound = statement.Bind(usuarioId)
+                .SetPageSize(pageSize);
+
+            if (!string.IsNullOrWhiteSpace(pageState))
+                bound.SetPagingState(Convert.FromBase64String(pageState));
+
+            var rows = await _session.ExecuteAsync(bound);
+
+            return new CassandraPagedResult<ActividadUsuario>
+            {
+                Items = rows.Select(row => new ActividadUsuario
+                {
+                    UsuarioId = row.GetValue<Guid>("usuario_id"),
+                    FechaActividad = row.GetValue<DateTimeOffset>("fecha_actividad"),
+                    TipoActividad = row.GetValue<string>("tipo_actividad"),
+                    ContenidoId = row.GetValue<string>("contenido_id") ?? string.Empty,
+                }).ToList(),
+                NextPageState = rows.PagingState is null ? null : Convert.ToBase64String(rows.PagingState)
+            };
         }
     }
 }

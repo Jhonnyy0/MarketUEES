@@ -25,19 +25,24 @@ namespace MarketUees.API.Controllers
             if (!Guid.TryParse(usuarioIdStr, out var usuarioId))
                 return Unauthorized();
 
-            await _service.RegistrarVistaAsync(usuarioId, contenidoId);
-            return NoContent();
+            var vista = await _service.RegistrarVistaAsync(usuarioId, contenidoId);
+
+            return Ok(new
+            {
+                mensaje = "Vista registrada correctamente.",
+                data = vista
+            });
         }
 
         /// <summary>Devuelve el historial de vistas del usuario autenticado.</summary>
         [HttpGet("mis-vistas")]
-        public async Task<IActionResult> MisVistas([FromQuery] int page = 1, [FromQuery] int pageSize = 10)
+        public async Task<IActionResult> MisVistas([FromQuery] int pageSize = 10, [FromQuery] string? pageState = null)
         {
             var usuarioIdStr = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (!Guid.TryParse(usuarioIdStr, out var usuarioId))
                 return Unauthorized();
 
-            var vistas = await _service.ObtenerVistasPorUsuarioAsync(usuarioId, page, pageSize);
+            var vistas = await _service.ObtenerVistasPorUsuarioAsync(usuarioId, pageSize, pageState);
             return Ok(vistas);
         }
     }

@@ -30,19 +30,24 @@ namespace MarketUees.API.Controllers
             if (!Guid.TryParse(usuarioIdStr, out var usuarioId))
                 return Unauthorized();
 
-            await _service.RegistrarActividadAsync(usuarioId, request.TipoActividad, request.ContenidoId);
-            return NoContent();
+            var actividad = await _service.RegistrarActividadAsync(usuarioId, request.TipoActividad, request.ContenidoId);
+
+            return Ok(new
+            {
+                mensaje = "Actividad registrada correctamente.",
+                data = actividad
+            });
         }
 
         /// <summary>Devuelve el historial de actividad del usuario autenticado.</summary>
         [HttpGet("mi-actividad")]
-        public async Task<IActionResult> MiActividad([FromQuery] int page = 1, [FromQuery] int pageSize = 10)
+        public async Task<IActionResult> MiActividad([FromQuery] int pageSize = 10, [FromQuery] string? pageState = null)
         {
             var usuarioIdStr = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (!Guid.TryParse(usuarioIdStr, out var usuarioId))
                 return Unauthorized();
 
-            var actividad = await _service.ObtenerActividadPorUsuarioAsync(usuarioId, page, pageSize);
+            var actividad = await _service.ObtenerActividadPorUsuarioAsync(usuarioId, pageSize, pageState);
             return Ok(actividad);
         }
     }

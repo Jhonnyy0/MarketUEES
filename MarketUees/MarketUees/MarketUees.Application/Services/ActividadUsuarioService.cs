@@ -1,3 +1,4 @@
+using MarketUees.Domain.Common;
 using MarketUees.Domain.Entities;
 using MarketUees.Domain.Interfaces.Repositories;
 
@@ -12,7 +13,7 @@ namespace MarketUees.Application.Services
             _repository = repository;
         }
 
-        public Task RegistrarActividadAsync(Guid usuarioId, string tipoActividad, string contenidoId)
+        public async Task<ActividadUsuario> RegistrarActividadAsync(Guid usuarioId, string tipoActividad, string contenidoId)
         {
             var actividad = new ActividadUsuario
             {
@@ -21,21 +22,17 @@ namespace MarketUees.Application.Services
                 ContenidoId = contenidoId,
                 FechaActividad = DateTimeOffset.UtcNow
             };
-            return _repository.RegistrarActividadAsync(actividad);
+            await _repository.RegistrarActividadAsync(actividad);
+            return actividad;
         }
 
-        public async Task<IEnumerable<ActividadUsuario>> ObtenerActividadPorUsuarioAsync(
+        public Task<CassandraPagedResult<ActividadUsuario>> ObtenerActividadPorUsuarioAsync(
             Guid usuarioId,
-            int page = 1,
-            int pageSize = 10)
+            int pageSize = 10,
+            string? pageState = null)
         {
-            page = Math.Max(page, 1);
             pageSize = Math.Clamp(pageSize, 1, 100);
-
-            var actividad = await _repository.ObtenerPorUsuarioAsync(usuarioId);
-            return actividad
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize);
+            return _repository.ObtenerPorUsuarioPaginadoAsync(usuarioId, pageSize, pageState);
         }
     }
 }

@@ -51,6 +51,7 @@ services:
       - TZ=America/El_Salvador
     volumes:
       - ./Backups_Minio_MarketUEES:/minio-work
+      - ./Backup_Lock_MarketUEES:/backup-lock
     depends_on:
       - cassandra-node1
     entrypoint:
@@ -73,9 +74,16 @@ services:
           sleep "$$WAIT"
           TAG="backup_minio_$$(date +%Y%m%d_%H%M%S)"
           DEST="/minio-work/$$TAG"
+          if [ -f /backup-lock/backup.lock ]; then
+            echo "Hay otro backup en proceso. Se intentara en 60 segundos."
+            sleep 60
+            continue
+          fi
+          echo backup_minio_automatico > /backup-lock/backup.lock
           mkdir -p "$$DEST"
           cqlsh cassandra-node1 -e "COPY marketuees.vistas_contenido TO '$$DEST/vistas_contenido.csv' WITH HEADER = TRUE;"
           cqlsh cassandra-node1 -e "COPY marketuees.actividad_usuario TO '$$DEST/actividad_usuario.csv' WITH HEADER = TRUE;"
+          rm -f /backup-lock/backup.lock
           echo "Backup MinIO preparado: $$TAG"
         done
     restart: unless-stopped

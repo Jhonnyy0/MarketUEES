@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MarketUees.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86a331792daa10017cbd85b7d0e486d051d46e37")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0341e12d800344bc80765c997e59572154c3c718")]
 [assembly: System.Reflection.AssemblyProductAttribute("MarketUees.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MarketUees.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,3 +1,4 @@
+using MarketUees.Domain.Common;
 using MarketUees.Domain.Entities;
 using MarketUees.Domain.Interfaces.Repositories;
 
@@ -12,7 +13,7 @@ namespace MarketUees.Application.Services
             _repository = repository;
         }
 
-        public Task RegistrarVistaAsync(Guid usuarioId, string contenidoId)
+        public async Task<VistaContenido> RegistrarVistaAsync(Guid usuarioId, string contenidoId)
         {
             var vista = new VistaContenido
             {
@@ -20,21 +21,17 @@ namespace MarketUees.Application.Services
                 ContenidoId = contenidoId,
                 FechaVista = DateTimeOffset.UtcNow
             };
-            return _repository.RegistrarVistaAsync(vista);
+            await _repository.RegistrarVistaAsync(vista);
+            return vista;
         }
 
-        public async Task<IEnumerable<VistaContenido>> ObtenerVistasPorUsuarioAsync(
+        public Task<CassandraPagedResult<VistaContenido>> ObtenerVistasPorUsuarioAsync(
             Guid usuarioId,
-            int page = 1,
-            int pageSize = 10)
+            int pageSize = 10,
+            string? pageState = null)
         {
-            page = Math.Max(page, 1);
             pageSize = Math.Clamp(pageSize, 1, 100);
-
-            var vistas = await _repository.ObtenerPorUsuarioAsync(usuarioId);
-            return vistas
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize);
+            return _repository.ObtenerPorUsuarioPaginadoAsync(usuarioId, pageSize, pageState);
         }
     }
 }
