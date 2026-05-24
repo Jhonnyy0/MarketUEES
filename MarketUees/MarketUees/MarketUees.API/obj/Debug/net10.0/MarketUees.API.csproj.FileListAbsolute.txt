@@ -118,4 +118,3 @@ C:\Users\Alejandro\Documents\GitHub\MarketUEES\MarketUees\MarketUees\build-check
 C:\Users\Alejandro\Documents\GitHub\MarketUEES\MarketUees\MarketUees\build-check\MarketUees.API.runtimeconfig.json
 C:\Users\Alejandro\Documents\GitHub\MarketUEES\MarketUees\MarketUees\build-check\MarketUees.API.dll
 C:\Users\Alejandro\Documents\GitHub\MarketUEES\MarketUees\MarketUees\build-check\MarketUees.API.pdb
-C:\Users\Alejandro\Documents\GitHub\MarketUEES\MarketUees\MarketUees\MarketUees.API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

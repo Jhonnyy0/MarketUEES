@@ -31,13 +31,13 @@ namespace MarketUees.API.Controllers
 
         /// <summary>Devuelve el historial de vistas del usuario autenticado.</summary>
         [HttpGet("mis-vistas")]
-        public async Task<IActionResult> MisVistas()
+        public async Task<IActionResult> MisVistas([FromQuery] int page = 1, [FromQuery] int pageSize = 10)
         {
             var usuarioIdStr = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (!Guid.TryParse(usuarioIdStr, out var usuarioId))
                 return Unauthorized();
 
-            var vistas = await _service.ObtenerVistasPorUsuarioAsync(usuarioId);
+            var vistas = await _service.ObtenerVistasPorUsuarioAsync(usuarioId, page, pageSize);
             return Ok(vistas);
         }
     }

@@ -23,7 +23,18 @@ namespace MarketUees.Application.Services
             return _repository.RegistrarVistaAsync(vista);
         }
 
-        public Task<IEnumerable<VistaContenido>> ObtenerVistasPorUsuarioAsync(Guid usuarioId)
-            => _repository.ObtenerPorUsuarioAsync(usuarioId);
+        public async Task<IEnumerable<VistaContenido>> ObtenerVistasPorUsuarioAsync(
+            Guid usuarioId,
+            int page = 1,
+            int pageSize = 10)
+        {
+            page = Math.Max(page, 1);
+            pageSize = Math.Clamp(pageSize, 1, 100);
+
+            var vistas = await _repository.ObtenerPorUsuarioAsync(usuarioId);
+            return vistas
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize);
+        }
     }
 }

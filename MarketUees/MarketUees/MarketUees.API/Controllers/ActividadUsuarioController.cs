@@ -36,13 +36,13 @@ namespace MarketUees.API.Controllers
 
         /// <summary>Devuelve el historial de actividad del usuario autenticado.</summary>
         [HttpGet("mi-actividad")]
-        public async Task<IActionResult> MiActividad()
+        public async Task<IActionResult> MiActividad([FromQuery] int page = 1, [FromQuery] int pageSize = 10)
         {
             var usuarioIdStr = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (!Guid.TryParse(usuarioIdStr, out var usuarioId))
                 return Unauthorized();
 
-            var actividad = await _service.ObtenerActividadPorUsuarioAsync(usuarioId);
+            var actividad = await _service.ObtenerActividadPorUsuarioAsync(usuarioId, page, pageSize);
             return Ok(actividad);
         }
     }
